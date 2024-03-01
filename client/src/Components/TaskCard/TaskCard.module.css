@@ -1,0 +1,322 @@
+body {
+  box-sizing: border-box;
+}
+
+.priority {
+  font-size: 1vmin;
+  color: #999;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2vmin;
+  font-weight: bold;
+  color: #333;
+  margin-top: 3px;
+}
+
+.checklist {
+  font-weight: 900;
+  color: black;
+}
+.checklistCount {
+  font-size: 1.5vmin;
+  margin-top: 4px;
+}
+.img {
+  width: 12.6px;
+}
+
+.checklist button {
+  cursor: pointer;
+}
+
+.checklist ul {
+  list-style-type: none;
+  padding: 0;
+}
+.checklistToggle {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1em;
+}
+.checklist li {
+  margin-top: 6px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.4vmin;
+  padding: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 9px;
+  justify-content: space-between;
+}
+
+.checkboxmark {
+  width: 30px;
+}
+.checklist li input[type="checkbox"] {
+  accent-color: #17a2b8;
+  margin-right: 8px;
+  cursor: pointer;
+  height: 13px;
+  width: 15px;
+}
+
+.dueDate {
+  font-size: 1vmin;
+  background-color: #dbdbdb;
+  padding: 3px 6px;
+  color: #5a5a5a;
+  border-radius: 4px;
+}
+.taskCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 4% 7%;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 0;
+  margin: 0px 25px;
+  margin-bottom: 4%;
+  margin-left: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  font-size: 5px;
+  width: 100%;
+}
+.dueDatePlaceholder {
+  height: 20px;
+  width: 30px;
+}
+.btn {
+  /* font-size: 6px; */
+  font-size: 0.9vmin;
+  margin-left: 4px;
+  background-color: #eeecec;
+  font-weight: 500;
+  color: #767575;
+  padding: 4px 5px;
+  border-radius: 4px;
+}
+
+.priorityDot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 7%;
+}
+.colorp {
+  width: 6vw;
+}
+
+.highPriority .priorityDot {
+  background-color: #ff2473;
+}
+
+.mediumPriority .priorityDot {
+  background-color: #18b0ff;
+}
+
+.lowPriority .priorityDot {
+  background-color: #63c05b;
+}
+
+.dueDateDone {
+  border-radius: 4px;
+  font-size: 1vmin;
+  color: white;
+  padding: 3px 5px;
+  background-color: #63c05b;
+}
+.dueDatePassed {
+  border-radius: 4px;
+  font-size: 5px;
+  font-size: 0.9vmin;
+  color: white;
+  padding: 3px 5px;
+  background-color: #cf3636;
+}
+
+.menu {
+  position: relative;
+
+  background: white;
+
+  box-shadow: 2px 2px 4px 5px black;
+
+  border-radius: 8px;
+  z-index: 100;
+  width: 120px;
+}
+
+.menuButton {
+  display: block;
+  width: 100%;
+  padding: 4px;
+  font-size: 1.4vmin;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuButton:last-child {
+  border-bottom: none;
+}
+
+.menuButton:hover {
+  color: red;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  text-align: center;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+}
+
+.modalContent {
+  margin-bottom: 20px;
+  font-size: 2vmin;
+  font-weight: 600;
+}
+
+.modalActions {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalCloseButton,
+.modalConfirmButton {
+  padding: 8px 0px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 7px 0;
+  border-radius: 7px;
+  width: 21vw;
+}
+
+.modalConfirmButton {
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+}
+
+.modalCloseButton {
+  background-color: white;
+  color: #cf3636;
+  border: 1px solid #cf3636;
+  font-weight: 600;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+}
+
+.menu {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  background: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+
+  z-index: 1;
+  width: 120px;
+}
+
+.dot {
+  color: black;
+  width: 17px;
+}
+.checklist li {
+  margin-top: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 9px;
+  padding-bottom: 6px;
+  margin-bottom: 5px;
+}
+
+.checklist li input[type="checkbox"] {
+  accent-color: #17a2b8;
+  margin-right: 9px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border-radius: 9px;
+  vertical-align: middle;
+}
+
+.checklist li span {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: calc(100% - 25px);
+  margin-top: 0;
+}
+
+.customToast {
+  width: 100px;
+  background: #f6fff9;
+  border: 1px solid #48c1b5;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: none;
+  position: fixed;
+  right: 1%;
+  top: 2%;
+  z-index: 9999;
+}
+
+.Toastify__toast-container--top-right {
+  top: 1em;
+  right: 10px;
+}
+.Toastify__toast-icon {
+  display: none !important;
+}
+.Toastify__toast .checkboxmark {
+  display: none;
+}

@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  font-size: 14px;
+
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 1.6rem;
+  width: 14px;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1rem;
+  color: currentColor;
+  text-decoration: none;
+
+  font-size: 1.9vmin;
+  width: 100%;
+
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.navigation img {
+  margin-right: 0.5rem;
+  width: 16px;
+}
+
+.navigation a:hover {
+  background: #4391ed1a;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+
+  font-weight: bold;
+}
+
+.navigation img {
+  width: 20px;
+  height: 20px;
+}
+
+.navigation a > * {
+  display: flex;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  min-width: 199px;
+
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.85vmin;
+
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0.6rem;
+  color: black;
+  padding-left: 47px;
+  text-decoration: none;
+
+  font-size: 1.9vmin;
+  font-family: "poppins";
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+  color: #707070;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  background: #4391ed1a;
+  margin-left: 0;
+  color: black;
+  font-weight: 500;
+  transition: 0ms;
+}
+
+.navigation img {
+  margin-right: 0.7rem;
+  width: 17px;
+  height: 17px;
+}
+
+.logouttxt {
+  font-size: 2.2vmin;
+  font-weight: 600;
+}
+
+.logoutImg {
+  width: 13px;
+
+  font-weight: 900;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 11;
+  font-size: 12px;
+}
+
+.modalActions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20vw;
+  font-weight: 600;
+}
+
+.modalConfirmButton,
+.modalCloseButton {
+  padding: 9px 0px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "poppins";
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 2px;
+  margin-top: 10px;
+
+  box-shadow: 0px 2px 12px 0px #82698c33;
+}
+
+.modalConfirmButton {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.modalCloseButton {
+  background-color: white;
+  color: #cf3636;
+  border: 1px solid #cf3636;
+}
+.logout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  margin-top: auto;
+  margin-bottom: 25%;
+}
+
+.logout button {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  font-size: 1.9vmin;
+  background: none;
+  border: none;
+  color: #cf3636;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 19.5%;
+}
+
+.logoutImg {
+  margin-right: 10px;
+}

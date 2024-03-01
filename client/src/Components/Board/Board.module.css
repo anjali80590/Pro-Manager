@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:wght@200;400;500;600&family=Single+Day&display=swap");
+
+.board {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
+  /* overflow: hidden; */
+
+  background-color: white;
+  gap: 20px;
+  font-family: "poppins";
+  /* border: 2px solid brown; */
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 20px;
+  /* width: 110%; */
+  /* min-width: 100%; */
+  height: 80.3vh;
+
+  width: 112%;
+  /* overflow-x: auto; */
+}
+.boardscroll {
+  overflow-x: auto;
+
+  width: 110%;
+  /* min-width: 86vw; */
+
+  height: 80.3vh;
+  /* border: 2px solid green; */
+}
+
+.boardContainer {
+  height: 100vh;
+}
+
+
+.column {
+  background-color: #eef2f5;
+  border-radius: 6px;
+  padding: 1% 0;
+  height: 77vh;
+  /* flex: 1 1 auto; Grow and shrink as needed, basis auto */
+  flex: 0 0 auto;
+  /* width: calc(24% - 20px);  */
+  min-width: 21.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.column:last-child {
+  /* min-width: 140px; */
+ 
+}
+
+.columnHeader {
+  /* font-size: 13px; */
+  font-size: 2vmin;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  /* margin-bottom: 20px; */
+  /* height: 20px; */
+}
+
+.addButton:hover {
+  background-color: #026aa7;
+}
+.footer {
+  border: 2px solid black;
+}
+.dateinput {
+  margin-right: 100px;
+}
+.task {
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.taskList {
+  overflow-y: auto;
+  padding-left: 20px;
+  padding-right: 5px;
+  /* padding: 0px 20px; */
+  white-space-collapse: collapse;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  margin-top: 5%;
+  height: 70vh;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.lowPriority {
+  color: #5aac44;
+}
+
+.icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checklist {
+  margin-top: 7px;
+}
+.addButton {
+  /* font-size: 18px; */
+  font-size: 2.5vmin;
+  position: relative;
+  left: 30%;
+  /* left: 78px; */
+  /* left: 5vw; */
+
+  color: #000000;
+}
+.addButtion:hover {
+  font-size: 25px;
+  position: relative;
+  left: 60px;
+  bottom: 2px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 300px; */
+  /* width: 16rem; */
+  z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+.dueDate {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #777;
+  text-align: right;
+}
+
+
+/* .actions {
+  display: flex;
+  gap: 10px; 
+  justify-content: flex-end;
+  margin-top: 10px;
+} */
+
+/* .actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0079bf;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.actions button:hover {
+  background-color: #026aa7;
+} */
+
+.filterDropdown {
+  position: absolute;
+  right: 1.5%;
+  /* top: 70px; */
+  top: 57%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  /* text-align: right; */
+  text-align: right;
+  width: 100px;
+  color: black;
+  /* border: 2px solid green; */
+  font-weight: 500;
+}
+.filterDropdown:focus {
+  border: none;
+  outline: none;
+  /* text-align: right; */
+}
+.filterDropdown:active {
+  border: none;
+}
+.currentDate {
+  position: absolute;
+  top: 20px;
+  right: 2%;
+
+  font-size: 14px;
+
+  font-family: "poppins";
+  color: #707070;
+  font-weight: 500;
+}
+.handledate {
+  border: none;
+  font-size: 14px;
+  text-align: right;
+}
+.option {
+  text-align: center;
+  /* margin-top: 2%; */
+}
+.option:hover {
+  background-color: white;
+}
+.handledate:focus {
+  border: none;
+}
+
+.userInfo {
+  position: relative;
+  /* height: 30vh; */
+  /* font-size: 16px; */
+  font-size: 2.4vmin;
+  height: 19vh;
+  padding: 0 20px;
+  font-weight: 700;
+  position: relative;
+  /* border: 2px solid yellow; */
+}
+.userName {
+  position: absolute;
+  top: 17px;
+}
+
+.heading {
+  position: absolute;
+  top: 57%;
+
+  font-family: "poppins";
+  font-weight: 500;
+  /* font-size: 20px; */
+  font-size: 3vmin;
+}
+.addButton:hover {
+  background-color: transparent;
+}
+.group {
+  width: 14px;
+  margin-left: 30px;
+}
+.filterDropdown select,
+.handledate {
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 550;
+  font-size: 1.8vmin;
+}
+
+.filterDropdown select:focus,
+.handledate:focus,
+.filterDropdown select:active,
+.handledate:active {
+  border: none;
+  outline: none;
+  background-color: none;
+  background: none;
+}
+.option {
+  text-align: center;
+  background-color: transparent; /* or use a specific color */
+}
+
+.option:focus,
+.option:active {
+  background-color: transparent; /* or use a specific color */
+}
+.filterDropdown option {
+  background-color: white;
+  color: black;
+}
+
+

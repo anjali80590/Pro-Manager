@@ -1,0 +1,228 @@
+.sharetask {
+  width: 100vw;
+  height: 100vh;
+}
+.taskCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px 0;
+  margin: 20px auto;
+  width: 40%;
+  margin-top: 8vh;
+  max-height: 80vh;
+  height: auto;
+  overflow: hidden;
+  border: 2px solid #edf5fe;
+}
+.check {
+  padding: 0 30px;
+  color: black;
+  font-size: 1.6vmin;
+  font-weight: 500;
+  font-family: "Inter";
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.taskTitle {
+  font-size: 2.4vmin;
+  font-family: "poppins";
+  color: black;
+  font-weight: 600;
+  margin-bottom: 18px;
+  padding: 0px 30px;
+}
+
+.priority {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  margin-top: 8px;
+  padding: 0px 30px;
+  font-size: 7px;
+  color: #707070;
+}
+
+.priorityDot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0px 30px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 40vw;
+  margin: 0 auto;
+  overflow-y: auto;
+  margin: 0;
+  height: auto;
+  max-height: 45vh;
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  width: 100%;
+  font-size: 13px;
+  font-family: "Inter";
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  padding: 6px 10px;
+}
+
+.checklistItem input[type="checkbox"] {
+  margin-right: 10px;
+  padding: 0px 30px;
+  width: 12px;
+  height: 12px;
+
+  accent-color: #17a2b8;
+}
+
+.taskStatus {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.completedtaskText {
+  text-decoration: line-through;
+}
+
+.dateBox {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 35px;
+  margin-top: 20px;
+  font-size: 11px;
+}
+.dueDateButton {
+  background-color: #cf3636;
+  color: white;
+
+  font-size: 10px;
+  padding: 2px 6px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin-bottom: 20px;
+}
+
+.apiDueDate {
+  color: black;
+  font-weight: 500;
+}
+.sharetask img {
+  width: 14px;
+}
+.sharelogo {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: black;
+  font-weight: 700;
+  font-family: "poppins";
+  display: flex;
+  width: 85px;
+  font-size: 10.7px;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  margin-bottom: 17px;
+  width: 100%;
+  font-size: 13px;
+  font-size: 1.8vmin;
+  font-family: "Inter";
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+}
+
+.checklistItem label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  overflow-y: auto;
+  padding: 0px 30px;
+
+  font-size: 1.8vmin;
+  color: #000000;
+  margin-bottom: 7px;
+  font-weight: 500;
+  box-sizing: border-box;
+  max-height: 48vh;
+  height: auto;
+}
+
+@media (max-width: 680px) {
+  .taskTitle {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .taskCard {
+    background-color: white;
+    border-radius: 8px;
+
+    margin: 20px auto;
+
+    width: 89vw;
+    margin: 20px;
+    margin-top: 80px;
+
+    border: 1px solid #edf5fe;
+  }
+  .checklist {
+    width: 100%;
+    overflow-y: auto;
+    font-size: 10px;
+  }
+  .checklistItem input[type="checkbox"] {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .check {
+    font-size: 10px;
+  }
+  .checklistItem span {
+    flex-grow: 1;
+  }
+
+  .checklistItem {
+    font-size: 11px;
+  }
+
+  .checklistItem input[type="checkbox"] {
+    margin-right: 10px;
+    padding: 0px 30px;
+    width: 12px;
+    height: 12px;
+
+    accent-color: #17a2b8;
+  }
+}
