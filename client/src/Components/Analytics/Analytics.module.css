@@ -1,7 +1,6 @@
 .container {
   font-family: Arial, sans-serif;
   display: flex;
-
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -12,7 +11,6 @@
   padding: 10px 20px;
   margin: 11px;
   margin-top: 8vh;
-
   width: 27.74vw;
   height: 30.15vh;
 
@@ -25,7 +23,6 @@
   padding-top: 20px;
   color: black;
   font-weight: 500;
-
   font-size: 2vmin;
 }
 .count {
